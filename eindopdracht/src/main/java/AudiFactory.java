@@ -1,26 +1,11 @@
 public class AudiFactory extends CarFactory{
-    @Override
-    public SportsCar createSportsCar(String colour) {
-        AudiSport s = new AudiSport();
-        s.colour = colour;
-        s.horsePower = 525;
-        s.seats = 2;
-        s.price = 60000;
-        s.engine = new PertrolEngine();
-        return s;
+    public AudiSport createSportsCar(String colour) {
+        return new AudiSport(colour, 2, new PertrolEngine(),525, 60000);
     }
-    public FamilyCar createFamilyCar(String colour) {
-        AudiFamily f = new AudiFamily();
-        f.colour = colour;
-        f.horsePower = 200;
-        f.seats = 5;
-        f.price = 40000;
-        f.engine = new ElectricEngine();
-        return f;
+    public AudiFamily createFamilyCar(String colour) {
+        return new AudiFamily(colour, 5, new DieselEngine(), 250, 40000);
     }
-
-    @Override
-    public Suv createSuv(String colour) {
-        return null;
+    public AudiSuv createSuv(String colour) {
+        return new AudiSuv(colour, 7, new ElectricEngine(), 280, 50000);
     }
 }

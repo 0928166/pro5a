@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pro5a_einopdracht" />
+        <module name="eindopdracht" />
       </profile>
     </annotationProcessing>
   </component>

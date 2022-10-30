@@ -1,4 +1,4 @@
-public class CarDecorator extends Car{
+public class CarDecorator extends Car {
     private Car c = null;
 
     public CarDecorator(Car _c) {
@@ -11,4 +11,42 @@ public class CarDecorator extends Car{
             c.printInfo();
         }
     }
+    @Override
+    public int price() {
+        if (c != null) {
+            return c.price();
+        }
+        return 0;
+    }
+    @Override
+    public int horsePower() {
+        if (c != null) {
+            return c.horsePower();
+        }
+        return 0;
+    }
+    @Override
+    public int seats() {
+        if (c != null) {
+            return c.seats();
+        }
+        return 0;
+    }
+
+    @Override
+    public String colour() {
+        if (c != null) {
+            return c.colour();
+        }
+        return null;
+    }
+
+    @Override
+    public Engine engine() {
+        if (c != null) {
+            return c.engine();
+        }
+        return null;
+    }
+
 }

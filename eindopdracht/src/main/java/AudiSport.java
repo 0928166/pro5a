@@ -1,7 +1,9 @@
 public class AudiSport extends SportsCar{
-    @Override
+
+    public AudiSport(String colour, int seats, Engine engine, int horsepower,  int price ) {
+        super(colour,seats,engine,horsepower,price);
+    }
     public void printInfo() {
-        System.out.print("Audi ");
-        super.printInfo();
+        System.out.println("Audi sport car");
     }
 }
