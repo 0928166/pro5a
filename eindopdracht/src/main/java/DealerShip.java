@@ -52,10 +52,16 @@ public class DealerShip {
             return null;
         }
         System.out.println("showing occasion list:");
+
         while (i < occasionList.size()) {
             System.out.println(i);
             occasionList.get(i).printInfo();
-            occasionList.get(i).price();
+            System.out.println("Price: "+ occasionList.get(i).price());
+            System.out.print("Engine: ");
+            occasionList.get(i).engine().printEngineType();
+            System.out.println("HP: " + occasionList.get(i).horsePower());
+            occasionList.get(i).colour().printColour();
+            System.out.println("nr of seats: " + occasionList.get(i).seats());
             i++;
         }
         while (true) {

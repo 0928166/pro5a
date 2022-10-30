@@ -27,6 +27,12 @@ public class Client {
         System.out.println(name + " Bought: ");
         car.printInfo();
     }
+    public void modifyCar(){
+        System.out.println(name + " is modifying their car:");
+        car = dealerShip.modifyCar(car);
+        System.out.println("Result: ");
+        car.printInfo();
+    }
 
     public Car getCar() {
         return car;

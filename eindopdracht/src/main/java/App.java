@@ -32,6 +32,8 @@ public class App {
         client1.sellCar();
         // client buys a nice new car
         client1.buyNewCar();
+        // client modifies his new car
+        client1.modifyCar();
 
     }
 }
