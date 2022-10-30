@@ -1,5 +1,6 @@
 public class BmwSuv extends Suv{
-    public BmwSuv(String colour, int seats, Engine engine, int horsepower,  int price ) {
+    public BmwSuv(){}
+    public BmwSuv(Colour colour, int seats, Engine engine, int horsepower,  int price ) {
         super(colour,seats,engine,horsepower,price);
     }
     public void printInfo() {

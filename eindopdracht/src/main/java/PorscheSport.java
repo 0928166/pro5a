@@ -1,5 +1,6 @@
 public class PorscheSport extends SportsCar{
-    public PorscheSport(String colour, int seats, Engine engine, int horsepower,  int price ) {
+    public PorscheSport(){}
+    public PorscheSport(Colour colour, int seats, Engine engine, int horsepower,  int price ) {
         super(colour,seats,engine,horsepower,price);
     }
     public void printInfo() {

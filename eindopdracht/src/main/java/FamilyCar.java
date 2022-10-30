@@ -4,8 +4,8 @@ public abstract class FamilyCar extends Car{
 //    private Engine engine;
 //    private int price;
 //    private String colour;
-
-    public FamilyCar(String colour, int seats, Engine engine, int horsepower,  int price ) {
+    public FamilyCar(){}
+    public FamilyCar(Colour colour, int seats, Engine engine, int horsepower,  int price ) {
         this.colour = colour;
         this.seats = seats;
         this.engine = engine;
@@ -18,7 +18,7 @@ public abstract class FamilyCar extends Car{
     public int seats() {
         return seats;
     }
-    public String colour() {
+    public Colour colour() {
         return colour;
     }
     public Engine engine() {

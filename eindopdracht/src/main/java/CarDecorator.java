@@ -34,7 +34,7 @@ public class CarDecorator extends Car {
     }
 
     @Override
-    public String colour() {
+    public Colour colour() {
         if (c != null) {
             return c.colour();
         }

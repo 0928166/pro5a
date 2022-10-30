@@ -4,8 +4,8 @@ public abstract class SportsCar extends Car{
 //    private Engine engine;
 //    private int price;
 //    private String colour;
-
-    public SportsCar(String colour, int seats, Engine engine, int horsepower,  int price ) {
+    public SportsCar(){}
+    public SportsCar(Colour colour, int seats, Engine engine, int horsepower,  int price ) {
         this.colour = colour;
         this.seats = seats;
         this.engine = engine;
@@ -18,7 +18,7 @@ public abstract class SportsCar extends Car{
     public int seats() {
         return seats;
     }
-    public String colour() {
+    public Colour colour() {
         return colour;
     }
     public Engine engine() {
